@@ -25,4 +25,8 @@ void main(){
 	var varfrs = mtdfrs(10).map(mtdsec).toList();
 	print(varfrs);
 
+	// chage the iteration function to list
+	var varsec = mtdfrs(20).toList();
+	print(varsec); 
+	
 }
