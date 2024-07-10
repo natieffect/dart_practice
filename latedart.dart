@@ -11,9 +11,23 @@
 
 late int varfrs;
 
+String mtdfrs() => 'result';
+
 void main(){
 
 	varfrs = 1;
 	print(varfrs);
+
+
+	// initialize with out late
+	
+	String varsec = mtdfrs();
+		// in this code result is never used still execured
+
+	// with late initialization
+	
+	late String vartrd = mtdfrs();
+		// in this vartrd is not executed as the variable
+		// is never used and it is declared using late modifier
 
 }
