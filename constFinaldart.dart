@@ -31,13 +31,20 @@ void main(){
 	// this ensures that these varable have a value before any one can read them
 
 	var varsec = const [];
-	print(varsec);
 	// varsec is not constant, but the value it point to is
 	// you can reassign varsec to d/f list value
 	// but its current list value cannot be altered
 
 // your cant't modify const varable in dart
 
+	// you can define constant that use checks
+	const Object vartrd = 3;
+	const varfor = [vartrd as int];
+	print(varfor);
+	const varfiv = { if ( vartrd is int ) vartrd : 'int' };
+	print(varfiv);
+	const varsix = { if (varfor is List<int>) ...varfor};
+	print(varsix);
 
 
 }
